@@ -1,0 +1,38 @@
+<html>
+<head>
+
+
+</head>
+<body>
+<input type="number" id="aa"></input>
+<input type="number" id="bb"></input>
+<button onclick="git()">Click me</button>
+
+<script>
+let x="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nisl suscipit, hendrerit enim at, porttitor ligula. Nunc ornare mauris at dolor ullamcorper laoreet. Aliquam erat volutpat. Praesent nec imperdiet lacus. Proin ut mi sapien. Donec suscipit massa sed neque sollicitudin, nec aliquam leo bibendum. Proin ante nulla, convallis a faucibus non, tempus eu felis. Quisque eu lacus non sapien finibus luctus. Aliquam quis fringilla risus. Curabitur blandit aliquam leo. Integer dictum sed nunc condimentum sagittis. Nunc quis tellus tincidunt, tincidunt magna in, scelerisque erat. Phasellus eleifend egestas mi.";
+
+function git(){
+let a= document.getElementById("aa").value;
+let b= document.getElementById("bb").value;
+let t1= x.length;
+let t2= x.charAt("a");
+let t3= x.toUpperCase();
+let t4= x.split("W").length-1;
+let t5= x.replace("Lorem","Zapierdolcie mnie już błagam");
+let t6= x.slice(a,b);
+let t7= x.split(". ");
+let t8="";
+t7.forEach(el => {
+x=x.replace(el.charAt(0),el.charAt(0).toLowerCase());
+
+});
+
+
+
+document.getElementById("pepe").innerHTML= t1+ "<br><br>"+t2+"<br><br>"+t3+"<br><br>"+t4+"<br><br>"+t5+"<br><br>"+t6+"<br><br>"+x;
+}
+</script>
+<p id="pepe">
+</p>
+</body>
+</html>
